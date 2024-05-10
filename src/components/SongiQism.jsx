@@ -43,7 +43,7 @@ function SongiQism() {
                 <button  className={`${tl=='ru' ? 'tillar_btn':'bn'}`}  onClick={(e)=>{useTl('ru'); e.preventDefault()} }>Русский</button>
                 <button  className={`${tl=='eng' ? 'tillar_btn':'bn'}`}  onClick={(e)=>{useTl('eng'); e.preventDefault()} }>English</button>
               </div>
-              <textarea onChange={e=>uzru(e.target.value)} className="bio"></textarea>
+              <textarea onChange={e=>uzru(e.target.value)} className="bio" placeholder='Habar matni..'></textarea>
             </div>
         </form>
       </div>
