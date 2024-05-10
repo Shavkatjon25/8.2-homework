@@ -10,6 +10,7 @@ function SongiQism() {
   const ru=useSelector(k=>k.ru)
   const eng=useSelector(k=>k.eng)
   const dispach=useDispatch()
+  console.log(uz);
   const [tl, useTl]=useState('uz');
 
   const uzru=(e)=>{
@@ -46,7 +47,7 @@ function SongiQism() {
                 <button  className={`${tl=='ru' ? 'tillar_btn':'bn'}`}  onClick={(e)=>{useTl('ru'); e.preventDefault()} }>Русский</button>
                 <button  className={`${tl=='eng' ? 'tillar_btn':'bn'}`}  onClick={(e)=>{useTl('eng'); e.preventDefault()} }>English</button>
               </div>
-              <textarea onChange={e=>uzru(e.target.value)} value={tl==uz ? uz : tl==ru ? ru:eng } className="bio" placeholder='Habar matni..'></textarea>
+              <textarea onChange={e=>uzru(e.target.value)} value={tl=='uz' ? uz : tl=='ru' ? ru : eng} className="bio" placeholder='Habar matni..'></textarea>
             </div>
         </form>
       </div>

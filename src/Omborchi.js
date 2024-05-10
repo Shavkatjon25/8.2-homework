@@ -43,8 +43,8 @@ const Omborchi = createSlice({
         state.uz=action.payload
         
     },
-    feng:(state, action)=>{
-        state.ur=action.payload
+    fru:(state, action)=>{
+        state.ru=action.payload
         
     },
     feng:(state, action)=>{
